@@ -24,7 +24,7 @@ pipeline {
   
   environment {
     def BUILD_DATE = sh(script: "date +'%d%m%y'", returnStdout: true).trim()
-    COMMAND = "ant -DprojectName=${env.JOB_NAME}_${env.BUILD_DATE}_${env.BUILD_NUMBER} -DbuildNumber=${env.BUILD_NUMBER} -DjobName=${env.JOB_NAME}"
+    COMMAND = "ant -DprojectName=${env.JOB_NAME} -DbuildNumber=${env.BUILD_NUMBER} -DjobName=${env.JOB_NAME}"
   }
   
   stages {
