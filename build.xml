@@ -17,9 +17,12 @@
         <!--
         <property name="repositoryName" value="${repositoryName}"/>
        
-        <property name="repositoryName" value="${jobName}Repo"/>
-        -->
+        
+       
         <property name="repositoryName" value="${projectName}Repo"/>
+ -->
+	<property name="repositoryName" value="${jobName}Repo"/>
+	
         <property name="testPackageNamePattern" value="*_Test"/>
         <property name="jenkinsReportDir" value="${workspace.dir}/report"/>
 	
